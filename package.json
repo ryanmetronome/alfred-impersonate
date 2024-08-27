@@ -1,0 +1,40 @@
+{
+  "name": "alfred-impersonate",
+  "version": "0.0.0",
+  "description": "Metronome Impersonate",
+  "license": "MIT",
+  "repository": "ryan-metronome/alfred-impersonate",
+  "author": {
+    "name": "Ryan Morehouse",
+    "email": "ryan@metronome.com",
+    "url": "no"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0",
+    "@metronome-industries/gatekeeper-client": "^1.0.4",
+    "graphql-request": "^6.1.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}
